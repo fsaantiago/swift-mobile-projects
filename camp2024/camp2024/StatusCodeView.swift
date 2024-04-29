@@ -11,7 +11,7 @@ import SwiftUI
 struct StatusCodeView: View {
     @State private var statusCode: String = ""
     @Binding var selectedAPI: ImageAPI
-    
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
         VStack {
@@ -24,8 +24,10 @@ struct StatusCodeView: View {
             .pickerStyle(SegmentedPickerStyle())
             .padding()
             
-            Button("Voltar") {
-                
+            Button(action: {
+              self.presentationMode.wrappedValue.dismiss()
+            }) {
+              Text("Voltar")
             }
         }
     }
