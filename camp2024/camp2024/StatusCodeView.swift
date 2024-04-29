@@ -2,7 +2,7 @@
 //  StatusCodeView.swift
 //  camp2024
 //
-//  Created by Fernando Santiago on 26/04/24.
+//  Created by Fernando Santiago on 24/04/24.
 //
 
 import Foundation
@@ -10,7 +10,8 @@ import SwiftUI
 
 struct StatusCodeView: View {
     @State private var statusCode: String = ""
-    @State private var selectedAPI: ImageAPI = .goats
+    @Binding var selectedAPI: ImageAPI
+    
     
     var body: some View {
         VStack {
@@ -19,7 +20,6 @@ struct StatusCodeView: View {
                 ForEach(ImageAPI.allCases, id: \.self) { api in
                     Text(api.displayName).tag(api)
                 }
-                
             }
             .pickerStyle(SegmentedPickerStyle())
             .padding()

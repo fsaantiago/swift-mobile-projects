@@ -10,15 +10,15 @@
 				<key>location-parameters</key>
 				<dict>
 					<key>EndingColumnNumber</key>
-					<string>44</string>
+					<string>0</string>
 					<key>EndingLineNumber</key>
-					<string>35</string>
+					<string>43</string>
 					<key>StartingColumnNumber</key>
-					<string>44</string>
+					<string>0</string>
 					<key>StartingLineNumber</key>
-					<string>35</string>
+					<string>42</string>
 					<key>Timestamp</key>
-					<string>735845321.032322</string>
+					<string>736043817.4041409</string>
 				</dict>
 				<key>rebasable-url</key>
 				<dict>
@@ -34,19 +34,61 @@
 			<key>text-context</key>
 			<dict>
 				<key>focused</key>
-				<string></string>
+				<string>                   completion: @escaping(Result&lt;LoginResponse, LoginError&gt;) -&gt; ())</string>
 				<key>leading</key>
-				<string>public protocol LoginRequestProtocol {
-    func login(username: String, password: String,
-               completion: @escaping(Result&lt;</string>
+				<string>    public protocol LoginRequestProtocol {
+        func login(username: String, password: String,
+</string>
 				<key>trailing</key>
-				<string>LoginResponse, LoginError&gt;) -&gt; ())
-    
-}
+				<string>
+    }
+
 </string>
 			</dict>
-			<key>title</key>
-			<string>Error: Cannot find type 'LoginResponse' in scope</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>0</string>
+					<key>EndingLineNumber</key>
+					<string>43</string>
+					<key>StartingColumnNumber</key>
+					<string>0</string>
+					<key>StartingLineNumber</key>
+					<string>42</string>
+					<key>Timestamp</key>
+					<string>736043817.404085</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>camp2024/LoginViewModel.swift</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>                   completion: @escaping(Result&lt;LoginResponse, LoginError&gt;) -&gt; ())</string>
+				<key>leading</key>
+				<string>    public protocol LoginRequestProtocol {
+        func login(username: String, password: String,
+</string>
+				<key>trailing</key>
+				<string>
+    }
+
+</string>
+			</dict>
 			<key>type</key>
 			<string>bookmark</string>
 		</dict>

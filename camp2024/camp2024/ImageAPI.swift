@@ -2,7 +2,7 @@
 //  ImageAPI.swift
 //  camp2024
 //
-//  Created by Fernando Santiago on 26/04/24.
+//  Created by Fernando Santiago on 24/04/24.
 //
 
 import SwiftUI
@@ -24,7 +24,11 @@ enum ImageAPI: String, CaseIterable {
         case .garden: return "Jardim"
         case .ducks: return "Patos"
         case .pizza: return "Pizza"
-        }
+        }  
+
     }
+    
+    
+    
 }
 

@@ -10,6 +10,8 @@ import SwiftUI
 struct LoginView: View {
     
     @StateObject var viewModel = LoginViewModel()
+    @State private var isShowingCover = false
+    @State private var selectedAPI: ImageAPI = .goats
     
     @State var username = ""
     @State var password = ""
@@ -35,8 +37,10 @@ struct LoginView: View {
                         textFieldValue: "password")
                 }
                 .padding(.bottom, 32)
-                Button {
-                    viewModel.enterButtonAction()
+                Button() {
+                    isShowingCover = true
+                    //viewModel.enterButtonAction()
+                    
                 } label: {
                     ZStack {
                         Capsule()
@@ -45,6 +49,7 @@ struct LoginView: View {
                         Text("ENTRAR")
                             .foregroundStyle(.white)
                     }
+                    
                 }
                 .padding(.horizontal, 16)
             }
@@ -57,7 +62,9 @@ struct LoginView: View {
             )
             Image("logo")
         }
-        
+        .fullScreenCover(isPresented: $isShowingCover, content: {
+            StatusCodeView(selectedAPI: $selectedAPI)
+        })
     }
 }
 
